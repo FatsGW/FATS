@@ -1,0 +1,167 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shadow"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:id="@+id/enterYourName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Enter Your Name:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enterYourName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+            
+            <TextView
+                android:id="@+id/enterYourMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="and Message:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enterYourMessage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Message"
+                android:inputType="textShortMessage" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/colourPickerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/nameLayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shadow" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Choose Your Colour:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <View
+                android:id="@+id/colourPickerTextView"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:background="#FF0000" />
+
+            <Button
+                android:id="@+id/leftBtn_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="62dp"
+                android:layout_toLeftOf="@+id/colourPickerTextView"
+                android:background="@drawable/ic_action_previous_item" />
+
+            <Button
+                android:id="@+id/rightBtn_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="62dp"
+                android:layout_toRightOf="@+id/colourPickerTextView"
+                android:background="@drawable/ic_action_next_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/iconPickerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/colourPickerLayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shadow" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Choose Your Icon:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/iconImageView"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:src="@drawable/ic_launcher" />
+
+            <Button
+                android:id="@+id/leftBtn_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="62dp"
+                android:layout_toLeftOf="@+id/iconImageView"
+                android:background="@drawable/ic_action_previous_item" />
+
+            <Button
+                android:id="@+id/rightBtn_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="62dp"
+                android:layout_toRightOf="@+id/iconImageView"
+                android:background="@drawable/ic_action_next_item" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/findOthersBtn"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconPickerLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_action_network_wifi" />
+    </RelativeLayout>
+
+</ScrollView>

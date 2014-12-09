@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/spinningCircle"
+        android:actionLayout="@layout/actionbar_indeterminate_progress"
+        android:showAsAction="always"
+        android:title=""
+        android:visible="false"/>
+    <item
+        android:id="@+id/actionBarSwitch"
+        android:actionViewClass="android.widget.Switch"
+        android:showAsAction="always"
+        android:title=""/>
+    <item
+        android:id="@+id/testBtn"
+        android:showAsAction="never"
+        android:title="Add Test Data"/>
+    
+    <item
+        android:id="@+id/deleteAppBtn"
+        android:showAsAction="never"
+        android:title="Delete Registered Apps"/>
+    <item
+        android:id="@+id/deletePasserbyBtn"
+        android:showAsAction="never"
+        android:title="Delete Passerbys"/>
+    <item
+        android:id="@+id/deleteReceivedBtn"
+        android:showAsAction="never"
+        android:title="Delete Received Data"/>
+    <item
+        android:id="@+id/deleteTestBtn"
+        android:showAsAction="never"
+        android:title="Delete All Data"/>
+    
+    <item
+        android:id="@+id/printAllBtn"
+        android:showAsAction="never"
+        android:title="Print All Data"/>
+    
+    <item
+        android:id="@+id/readPowerValue"
+        android:showAsAction="never"
+        android:title="Show Power Value"/>
+
+</menu>
